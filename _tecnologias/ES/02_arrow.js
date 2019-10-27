@@ -1,7 +1,7 @@
 let aDatos = {precio: 100, iva: 12};
 
 aDatos.calcularIvaAsync = function () {
-    //console.log('The calcularIvaAsync method');
+    console.log('The calcularIvaAsync method');
     setTimeout(() => {
 
         let precioFinal = this.precio + (this.precio * this.iva / 100)
@@ -10,7 +10,7 @@ aDatos.calcularIvaAsync = function () {
             El precio final es: 
             ${precioFinal.toFixed(2)} `
         );
-    }, 1000)
+    }, 3000)
 }
 
 aDatos.calcularIvaAsync();

@@ -1,0 +1,25 @@
+<div class="card">
+  <div class="card-header">
+    <h4 class="card-title">Saludo</h4>
+  </div>
+  <div class="card-body">
+    <div class="form-group">
+      <label for="txtUsuario">Nombre</label>
+      <input type="text" [(ngModel)] = "usuario" #nombre
+        class="form-control" name="txtUsuario" id="txtUsuario" placeholder="">
+    </div>
+    <div class="form-group">
+      <label for="txtUsuario">Idioma</label>
+      <input type="text" [(ngModel)] = "idioma"
+        class="form-control" name="txtIdioma" id="txtIdioma" placeholder="">
+    </div>
+    <p class="card-text">
+      <button (click)="btnBorrar($event)" >Borrar</button>
+      <button (click)="btnUsuario($event)" >Usuario</button>
+    </p>
+  </div>
+  <div class="card-footer text-muted">
+    {{ idioma == 'es' ? 'Hola' : 'Hello'}}
+    {{usuario.toUpperCase()}} eres el numero {{1 + 1}}
+  </div>
+</div>

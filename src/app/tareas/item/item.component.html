@@ -1,0 +1,22 @@
+<div class="card">
+  <div class="card-header">
+    Header
+  </div>
+  <div class="card-body">
+    <h4 class="card-title">Nueva tarea</h4>
+
+    <div class="form-group">
+        <label for=""></label>
+        <input type="text" [(ngModel)] = "item"
+          class="form-control" name="txtItem" id="txtItem" aria-describedby="helpId" placeholder="">
+        
+      </div>
+
+    <p class="card-text">
+        Nuevo item: {{item}}
+    </p>
+  </div>
+  <div class="card-footer text-muted">
+    <button (click)="btnAdd()">Guardar</button>
+  </div>
+</div>

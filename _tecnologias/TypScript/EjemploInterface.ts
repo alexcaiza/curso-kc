@@ -1,5 +1,12 @@
-class Libro{
+interface Autor {
+    autor_nombre: string;
+    autor_apellido: string;
+}
 
+class LibroInterface implements Autor{
+
+    autor_nombre;
+    autor_apellido;
     autor: string;
     titulo: string;
     paginas: number;
@@ -14,7 +21,7 @@ class Libro{
     }
 }
 
-class LibroTec extends Libro {
+class LibroTecnico extends LibroInterface {
 
     categoria: string;
 
@@ -29,16 +36,16 @@ class LibroTec extends Libro {
     }
 }
 
-let libro1 = new Libro("Julian", "Caiza");
+let libroI1 = new LibroInterface("Julian", "Caiza");
 
-libro1.mostrar();
+libroI1.mostrar();
 
-libro1.autor = "Alex";
+libroI1.autor = "Alex";
 
-libro1.mostrar();
+libroI1.mostrar();
 
-let libro2 = new LibroTec("Julian", "Caiza", "Medico");
-libro2.mostrar();
+let libroT2 = new LibroTecnico("Julian", "Caiza", "Medico");
+libroT2.mostrar();
 
 // Compilar: 
 // ..\..\node_modules\.bin\ts-node Libros.ts

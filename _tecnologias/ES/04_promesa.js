@@ -9,7 +9,7 @@ function hacerAlgoPromesa() {
                 } else {
                     reject(number) //incorrecto
                 }
-            }, 2000);
+            }, 1000);
     })
 }
 

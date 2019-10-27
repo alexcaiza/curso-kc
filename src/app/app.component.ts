@@ -8,6 +8,5 @@ import { Component } from '@angular/core';
   }
 )
 export class AppComponent {
-  title = 'Curso-kc';
-  descripcion = 'Curso de angular 6';
+  title = 'KeepCoding';
 }

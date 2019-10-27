@@ -1,0 +1,21 @@
+<div class="card">
+    <div class="card-header">
+      <h4 class="card-title">Saludo / Referecias locales</h4>
+    </div>
+    <div class="card-body">
+      <div class="form-group">
+        <label for="txtUsuario">Nombre</label>
+        <input type="text" #nombre
+          class="form-control" name="txtUsuario2" id="txtUsuario2" placeholder="">
+      </div>
+      <p class="card-text">
+          <button (click)="nombre.value = nombre.value" >Saludar</button>
+          <button (click)="nombre.value = ''" >Borrar</button>
+        </p>
+    </div>
+    <div class="card-footer text-muted">
+      Hello {{ nombre.value}}
+      
+    </div>
+  </div>
+  

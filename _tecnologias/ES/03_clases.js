@@ -29,5 +29,5 @@ libro1.mostrar();
 
 let libro2 = new LibroTec("Julian", "Caiza", "Medico");
 libro2.mostrar();
-libro2.editorial  = 'Ibarras';
+libro2.editorial  = 'Ibarra';
 libro2.mostrar();
