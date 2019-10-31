@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { AboutModule } from './about/about.module';
 import { HomeModule } from './home/home.module';
 import { BrowserModule } from '@angular/platform-browser';
@@ -17,6 +18,7 @@ import { CoreModule } from './core/core.module';
   imports: [
     BrowserModule,
     FormsModule,
+    HttpClientModule,
     AppRoutingModule,
     CoreModule,
     HomeModule,

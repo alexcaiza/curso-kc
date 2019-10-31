@@ -16,7 +16,7 @@ export class HeadComponent implements OnInit {
   ngOnInit() {
     this.title = 'KeepCoding';
     this.descripcion = 'Curso de angular 6';
-    this.logo = '../../../assest/logo_angular.svg';
+    this.logo = '../../../assets/logo_angular.svg';
   }
 
 }
